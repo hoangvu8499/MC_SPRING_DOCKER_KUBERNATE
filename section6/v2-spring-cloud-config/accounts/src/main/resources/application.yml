@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb2
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+
+  config:
+    import:
+      - "application_prod.yml"
+      - "application_qa.yml"
+
+  profiles:
+    active:
+      - "qa"
+
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to Accounts service API"
+  contactDetails:
+    name: "Accounts Team"
+    email: "accounts@localhost"
+  onCallSupport:
+    -(84) 834314414
+    -(51) 929165686

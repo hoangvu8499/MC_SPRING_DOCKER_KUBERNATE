@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to Accounts service API"
+  contactDetails:
+    name: "Accounts Team"
+    email: "accounts@localhost"
+  onCallSupport:
+    -(84) 834314414
+    -(51) 929165686
