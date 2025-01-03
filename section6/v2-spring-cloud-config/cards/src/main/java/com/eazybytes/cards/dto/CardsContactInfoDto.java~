@@ -1,5 +1,0 @@
-package com.eazybytes.cards.dto;
-
-@ConfigurationProperties(prefix = "cards")
-public record CardsContactInfoDto(String message, Map<String, String> contactDetails, List<String> onCallSupport) {
-}
